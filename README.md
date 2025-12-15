@@ -7,11 +7,10 @@
 **Need a spark of inspiration?**
 This is a lightweight, styling-ready web application that serves wisdom on demand. It features a clean UI for users and a robust JSON REST API for developers.
 
-![App Preview](https://github.com/Olat1337/motivation-site/blob/edebcc293f8a5037c2d0c20e046c771d6bfcbf02/app_image.png)
+![App Preview](https://github.com/Olat1337/motivation-site/blob/b050f8e188203c5c804a9c1f9607df2d3037e425/app_image.png)
 
 ---
 ## ⚡ Features
-
 | Feature | Description |
 | :--- | :--- |
 | 🎨 **Web Interface** | Minimalist HTML5 & CSS3 design. |
@@ -108,4 +107,4 @@ Make it yours\! Open `quotes.json` and add your favorite sayings.
 
 ## 📄 License
 
-This project is free to use under the [MIT License.
+This project is free to use under the MIT License.
