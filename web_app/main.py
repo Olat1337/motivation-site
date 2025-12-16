@@ -1,12 +1,21 @@
 import random
 import json
+import os
 from flask import Flask, jsonify, render_template
 
 
 def load_json_quote():
-    json_file = open('quotes.json', 'r', encoding="utf-8")
-    all_quotes = json.load(json_file)
-    json_file.close()
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(base_dir, 'database', 'quotes.json')
+    all_quotes = []
+
+    try:
+        with open(db_path, 'r', encoding="utf-8") as f:
+            all_quotes = json.load(f)
+            f.close()
+    except FileNotFoundError:
+        print(f"Error: Could not find file at {db_path}")
+        all_quotes = [{"author": "System", "quote": "Could not load quotes. Check path."}]
 
     return all_quotes
 

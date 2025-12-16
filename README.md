@@ -2,21 +2,25 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-2.0%2B-green?style=for-the-badge&logo=flask&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript&logoColor=white)
+![Chrome](https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
 
 **Need a spark of inspiration?**
-This is a lightweight, styling-ready web application that serves wisdom on demand. It features a clean UI for users and a robust JSON REST API for developers.
-
-![App Preview](https://github.com/Olat1337/motivation-site/blob/b050f8e188203c5c804a9c1f9607df2d3037e425/app_image.png)
-
+This is a lightweight, styling-ready web application that serves wisdom on demand. It features a clean UI for users and a robust JSON REST API for developers. Now includes a **Chrome Extension** for offline motivation!  
+# Web App Preview
+![Web App Preview](https://github.com/Olat1337/motivation-site/blob/b050f8e188203c5c804a9c1f9607df2d3037e425/app_image.png)
+# Chrome Extension Preview
+![Extension Preview](https://github.com/Olat1337/motivation-site/blob/b050f8e188203c5c804a9c1f9607df2d3037e425/app_image.png)
 ---
 ## ⚡ Features
-| Feature              | Description                                              |
-|:---------------------|:---------------------------------------------------------|
-| 🎨 **Web Interface** | Minimalist HTML5 & CSS3 design.                          |
-| 🚀 **REST API**      | Fast JSON endpoint (`/api/ret_quote`) for external use.  |
-| 📂 **Flat-File DB**  | Zero-config database using a simple `quotes.json`.       |
-| 🛠 **Hackable**      | Easy to customize, extend, and deploy.                   |
+| Feature              | Description                                             |
+|:---------------------|:--------------------------------------------------------|
+| 🎨 **Web Interface** | Minimalist HTML5 & CSS3 design.                         |
+| 🧩 **Extension**     | Standalone Chrome Extension (Offline supported).        |
+| 🚀 **REST API**      | Fast JSON endpoint (`/api/ret_quote`) for external use. |
+| 📂 **Flat-File DB**  | Zero-config database using a simple `quotes.json`.      |
+| 🛠 **Hackable**      | Easy to customize, extend, and deploy.                  |
 
 ---
 
@@ -24,6 +28,11 @@ This is a lightweight, styling-ready web application that serves wisdom on deman
 
 ```text
 project_folder/
+├── extension/           # 🧩 Chrome Extension Source
+│   ├── manifest.json    # Config
+│   ├── popup.html       # View
+│   ├── popup.js         # Logic
+│   └── style.css        # Styles
 ├── main.py              # 🧠 Application Logic
 ├── quotes.json          # 📚 Database (JSON)
 ├── requirements.txt     # 📦 Dependencies
@@ -35,7 +44,7 @@ project_folder/
 
 -----
 
-## 🛠️ Installation
+## 🛠️ Installation (Web App)
 
 Get the code running on your machine in two steps.
 
@@ -51,6 +60,17 @@ cd motivation-site
 ```
 pip install -r requirements.txt
 ```
+
+-----
+
+## 🧩 Installation (Chrome Extension)
+
+To use the motivational quote popup in your browser:
+
+1.  Open Chrome and navigate to `chrome://extensions`.
+2.  Enable **Developer mode** in the top right corner.
+3.  Click **Load unpacked**.
+4.  Select the `extension` folder inside this project.
 
 -----
 
@@ -93,6 +113,11 @@ Want to use these quotes in your own app? We've got an endpoint for that.
 ## ⚙️ Customization
 
 Make it yours\! Open `quotes.json` and add your favorite sayings.
+
+  * **For Web App:** Edit the root `quotes.json`.
+  * **For Extension:** Edit `extension/quotes.json`.
+
+<!-- end list -->
 
 ```json
 [

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote of the Day</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+<body>
+    <div class="card">
+        <p class="quote" id="quote-text">{{ quote['quote'] }}</p>
+        <p class="author" id="quote-author">— {{ quote['author'] }}</p>
+
+        <div class="button-container">
+            <button onclick="getNewQuote()" id="new-quote-btn">New Quote</button>
+        </div>
+    </div>
+
+    <script>
+        function getNewQuote() {
+            const btn = document.getElementById('new-quote-btn');
+            const quoteText = document.getElementById('quote-text');
+            const authorText = document.getElementById('quote-author');
+
+            btn.innerText = "Loading...";
+            btn.disabled = true;
+            btn.style.opacity = "0.5";
+
+            fetch('/api/ret_quote')
+                .then(response => response.json())
+                .then(data => {
+                    quoteText.innerText = data.quote;
+                    authorText.innerText = "— " + data.author;
+
+                    btn.innerText = "New Quote";
+                    btn.disabled = false;
+                    btn.style.opacity = "1";
+                })
+                .catch(error => {
+                    console.error(error);
+                    btn.innerText = "Error";
+                });
+        }
+    </script>
+</body>
+</html>
