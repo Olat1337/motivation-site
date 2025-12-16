@@ -114,8 +114,8 @@ Want to use these quotes in your own app? We've got an endpoint for that.
 
 Make it yours\! Open `quotes.json` and add your favorite sayings.
 
-  * **For Web App:** Edit the root `quotes.json`.
-  * **For Extension:** Edit `extension/quotes.json`.
+  * **For Web App:** Edit `web_app/database/quotes.json`.
+  * **For Extension:** Edit `extension/database/quotes.json`.
 
 <!-- end list -->
 
