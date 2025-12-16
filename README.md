@@ -11,7 +11,7 @@ This is a lightweight, styling-ready web application that serves wisdom on deman
 # Web App Preview
 ![Web App Preview](https://github.com/Olat1337/motivation-site/blob/b050f8e188203c5c804a9c1f9607df2d3037e425/app_image.png)
 # Chrome Extension Preview
-![Extension Preview](https://github.com/Olat1337/motivation-site/blob/b050f8e188203c5c804a9c1f9607df2d3037e425/app_image.png)
+![Extension Preview](https://github.com/Olat1337/motivation-site/blob/68979abf613edb7aceb08ab1c21bc7b8868af2ac/images/extension_preview.png)
 ---
 ## ⚡ Features
 | Feature              | Description                                             |
