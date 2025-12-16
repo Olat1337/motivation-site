@@ -11,12 +11,12 @@ This is a lightweight, styling-ready web application that serves wisdom on deman
 
 ---
 ## ⚡ Features
-| Feature | Description |
-| :--- | :--- |
-| 🎨 **Web Interface** | Minimalist HTML5 & CSS3 design. |
-| 🚀 **REST API** | Fast JSON endpoint (`/api/ret_quote`) for external use. |
-| 📂 **Flat-File DB** | Zero-config database using a simple `quotes.json`. |
-| 🛠 **Hackable** | Easy to customize, extend, and deploy. |
+| Feature              | Description                                              |
+|:---------------------|:---------------------------------------------------------|
+| 🎨 **Web Interface** | Minimalist HTML5 & CSS3 design.                          |
+| 🚀 **REST API**      | Fast JSON endpoint (`/api/ret_quote`) for external use.  |
+| 📂 **Flat-File DB**  | Zero-config database using a simple `quotes.json`.       |
+| 🛠 **Hackable**      | Easy to customize, extend, and deploy.                   |
 
 ---
 
