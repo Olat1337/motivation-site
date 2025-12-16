@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Daily Motivation",
+  "version": "1.0",
+  "description": "Get a random motivational quote instantly.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": []
+}
